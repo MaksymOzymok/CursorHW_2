@@ -1,13 +1,13 @@
 
-function getNumber() {
+function getNumber(k) {
     let n;
     do {
-        n = prompt('Please, enter int number');
+        n = prompt(`Please, enter int number ${k}`);
     } while (isNaN(n) !== false || parseFloat(n)-parseInt(n)!==0);
     return n;
 }
-let n = parseInt(getNumber());
-let m = parseInt(getNumber());
+let n = parseInt(getNumber('N'));
+let m = parseInt(getNumber('M'));
 
 let isNeedEvenSkip = confirm('Do you need skip a even numbers?');
 
